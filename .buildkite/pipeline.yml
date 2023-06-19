@@ -4,7 +4,7 @@ steps:
       - "pip install coverage django=={{matrix.django_version}} djangorestframework=={{matrix.drf_version}}"
       - "cd /src && ./runtests.py"
     agents:
-      queue: new-builders  #FIXME
+      queue: new-default  #FIXME
     matrix:
       setup:
         django_version:
@@ -29,7 +29,7 @@ steps:
       - "pip install coverage django=={{matrix.django_version}} djangorestframework=={{matrix.drf_version}}"
       - "cd /src && ./runtests.py"
     agents:
-      queue: new-builders  #FIXME
+      queue: new-default  #FIXME
     matrix:
       setup:
         django_version:
